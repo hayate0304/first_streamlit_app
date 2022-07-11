@@ -43,7 +43,6 @@ try:
 except URLError as e:
    streamlit.error()
    
-streamlit.stop()
 
 streamlit.header("The fruit_load_list contains:")
 #snowflake functions
@@ -70,4 +69,5 @@ if streamlit.button('Add a fruit to the list'):
    back_from_function = insert_row_snowflake(fruit_choice2)
    streamlit.text(back_from_function)
 
+streamlit.stop()
 
